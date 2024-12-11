@@ -3,7 +3,7 @@ import {IoIosLogIn} from "react-icons/io";
 import React from "react";
 import CustomizedInput from "../components/shared/CustomizedInput";
 import {toast} from "react-hot-toast";
-import { useAuth } from "../content/AuthContent";
+import { useAuth } from "../context/AuthContext";
 const Login = () => {
     const auth=useAuth() 
     const handleSubmit=async(e:React.FormEvent<HTMLFormElement>)=>{
