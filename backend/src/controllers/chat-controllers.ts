@@ -22,7 +22,7 @@ export const generateChatCompletion = async(
         const openai = new OpenAIApi(config);
         //get latest response
         const chatResponse = await openai.createChatCompletion({
-            model: "gpt-3.5-turno",
+            model: "gpt-3.5-turbo",
             messages: chats,
         });
         user.chats.push(chatResponse.data.choices[0].message);
