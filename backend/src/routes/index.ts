@@ -11,6 +11,6 @@ appRouter.get("/", (req, res) => {
 
 // Mount other routes
 appRouter.use("/user", userRoutes); // domain/api/v1/user
-appRouter.use("/chats", chatRoutes); // domain/api/v1/chats
+appRouter.use("/chat", chatRoutes); // domain/api/v1/chats
 
 export default appRouter;
